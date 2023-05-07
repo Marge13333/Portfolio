@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----------header---------------*/
+.header{
+    width: 100%;
+    background-color: #DDDDDD;
+    
+}
+.header-intro{
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px ;
+    display: flex;
+   justify-content: space-between;
+}
+.Roca-logo{
+    text-align: start;
+    animation-name: headerIntro2 ;
+	animation-duration: 2s;
+    font-family: 'Poppins', sans-serif;
+
+}
+.header-logo{
+    font-size: 40px;
+    color: #1A1A1A;
+}
+.header-logo-desc{
+    font-size: 13px;
+    color: #B3B3B3;
+}
+.about-me{
+   text-align: center;
+   margin-top: -20px;
+   animation-name: headerIntro1 ;
+   animation-duration: 4s;
+}
+.header-01{
+    color: #1C1C1C;
+    font-size: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+.header-about-me{
+    color: #373737;
+    margin-top: -155px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.intro{
+    background-color: #DDDDDD;
+}
+/*-----------intro---------------*/
+
+.intro{
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro-wrapper{
+    display: flex;
+    margin: 0 auto;
+    gap: 60px;
+
+    
+}
+.background{
+
+    max-width: 700px;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+    border-radius: 50%;
+    transition: all.5s;
+    animation-name: BgIntro;
+	animation-duration: 2s;
+}
+.background:hover{
+    transform: scale(1.05);
+    box-shadow: 20px 20px 60px #8d6767;
+}
+/*------------slider----------*/
+/* .slide{
+	display: none;
+	position: absolute;
+	opacity: 0;
+	width: 0%;
+	visibility: hidden;
+	transition: all 0.5s;
+	top: 0;
+	left: -100%;
+}
+.slide.action {
+	display: block;
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+	position: relative;
+	left: 0;
+} */
+/*------------slider----------*/
+
+.header-bg{
+    max-width: 700px;
+    height: 700px;
+    display: none;
+    opacity: 0;
+    width: 0%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 60px #535353;
+}
+.header-bg.action{
+    max-width: 700px;
+    min-width: 699px;
+    height: 700px;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 60px #535353;
+    animation-name: headerIntro1 ;
+   animation-duration: 2s;
+}
+.my-info{
+    margin-top: 200px;
+    opacity: 1;
+    max-width: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation-name: infoIntro;
+	animation-duration: 2s;
+}
+.my-name1{
+    font-family:"GlacialIndifference-Regular" ;
+    font-size: 50px;
+    color: #212121;
+}
+.my-name2{
+    font-family:"GlacialIndifference-Bold" ;
+    font-size: 70px;
+    color: #212121;
+}
+.my-work{
+    font-family:"GlacialIndifference-Regular" ;
+    letter-spacing: 0.75px;
+    font-size: 25px;
+    color: #212121;
+    
+}
+.socials{
+    display: flex;
+    gap: 15px;
+    padding-top: 90px;
+    align-items: center;
+}
+.socials>a>img{
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: all.3s;
+}
+.socials>a>img:hover{
+    transform: scale(1.15);
+}
+.satisfied,.satisfied2{
+    margin-top: 650px;
+    max-width: 275px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation-name: satsIntro;
+	animation-duration: 2s;
+    
+}
+.satisfied-span{
+    display: flex;
+    gap: 10px;
+}
+.satisfied-100{
+    font-family: 'Poppins', sans-serif;
+ color: #E93656;
+ font-size: 24px;
+}
+.satisfied-100-2{
+    font-family: 'Poppins', sans-serif;
+    color: #212121;
+    font-size: 24px;
+}
+.satisfied-line,.satisfied-line2{
+    height: 5px;
+    background-color: #E93656;
+    margin-top:20px;
+    max-width: 340px;
+    border-radius: 10%;
+    animation-name: lineWidht;
+	animation-duration: 3s;
+    
+}
+.satisfied-2,.satisfied-line2{
+    display: none;
+}
+/*-------------responsive------------*/
+
+
+
+
+/*--------Intro X header---------*/
+@media (width <= 1532px){
+    /*--------Intro X header---------*/
+    .satisfied-2{
+        display: block;
+        margin-top: 70px;
+    }
+    .satisfied-line2{
+        display: block;
+        max-width: 290px;
+        margin-top: -5px;
+    }
+    .satisfied{
+        display: none;
+    }
+    .satisfied-line{
+        max-width: 290px;
+    }
+
+    /*--------Intro X header---------*/
+}
+@media (width <= 1200px){
+    /*--------Intro X header---------*/
+
+    .intro-wrapper{
+        display: flex;
+        margin: 0 auto;
+        margin-top: 100px;
+        gap: 60px;
+    }
+    .background{
+        max-width: 500px;
+        width: 100%;
+        max-height: 500px;
+    }
+    
+    .header-bg{
+        max-width: 500px;
+        height: 500px;
+    }
+    .header-bg.action{
+        max-width: 500px;
+        min-width: 499px;
+        height: 500px;
+    }
+    .my-info{
+        margin-top: 100px;
+        max-width: 610px;
+        gap: 8px;
+        animation-name: infoIntro2;
+        
+    }
+    .socials{
+        gap: 10px;
+        padding-top: 30px;
+        
+    }
+    .my-name1{
+        font-size: 35px;
+    }
+    .my-name2{
+        font-size: 55px;
+    }
+    .my-work{
+        font-size: 22px;
+    }
+    .satisfied-2{
+        display: block;
+        margin-top: 40px;
+    }
+    .satisfied-line2{
+        display: block;
+        max-width: 290px;
+        margin-top: -5px;
+    }
+    .satisfied{
+        display: none;
+    }
+    .satisfied-line{
+        max-width: 290px;
+    }
+   
+}
+@media (width <= 1024px){
+     /*--------Intro X header---------*/
+     .intro-wrapper{
+        display: flex;
+        margin: 0 auto;
+        margin-top: 100px;
+        gap: 40px;
+    }
+    .background{
+        max-width: 400px;
+        width: 100%;
+        max-height: 400px;
+    }
+    .my-info{
+        margin-top: 50px;
+        max-width: 610px;
+        gap: 8px;
+        animation-name: infoIntro3;
+        
+    }
+    .header-bg{
+        max-width: 400px;
+        height: 400px;
+    }
+    .header-bg.action{
+        max-width: 400px;
+        min-width: 399px;
+        height: 400px;
+    }
+    .socials{
+        gap: 7px;
+        padding-top: 20px;
+        
+    }
+    .my-name1{
+        font-size: 30px;
+    }
+    .my-name2{
+        font-size: 50px;
+    }
+    .my-work{
+        font-size: 18px;
+    }
+    .satisfied-2{
+        display: block;
+        margin-top: 30px;
+    }
+    .satisfied-line2{
+        display: block;
+        max-width: 250px;
+        margin-top: -5px;
+    }
+    .satisfied{
+        display: none;
+    }
+    .satisfied-line{
+        max-width: 250px;
+    }
+
+}
+@media (width <= 768px){
+    /*--------Intro X header---------*/
+    .header{
+        display: none;
+    }
+    .intro{
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .intro-wrapper{
+       display: flex;
+       margin: 0 auto;
+       margin-top: 0px;
+       gap: 20px;
+       flex-wrap: wrap;
+   }
+   
+   .background{
+    margin: auto;
+       max-width: 500px;
+       width: 100%;
+       max-height: 500px;
+       animation-name: BgIntro1;
+       
+   }
+   .my-info{
+       margin: auto;
+       margin-top: 30px;
+       max-width: 610px;
+       gap: 8px;
+       animation-name: infoIntro4; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+   }
+   
+   .header-bg{
+       max-width: 500px;
+       height: 500px;
+   }
+   .header-bg.action{
+       max-width: 500px;
+       min-width: 499px;
+       height: 500px;
+   }
+   .socials{
+       gap: 5px;
+       padding-top: 10px;
+       
+   }
+   .my-name1{
+       font-size: 25px;
+   }
+   .my-name2{
+       font-size: 45px;
+   }
+   .my-work{
+       font-size: 15px;
+   }
+   .satisfied-2{
+       display: block;
+       margin-top: 20px;
+   }
+   .satisfied-line2{
+       display: block;
+       max-width: 220px;
+       margin-top: -5px;
+   }
+   .satisfied{
+       display: none;
+   }
+   .satisfied-line{
+       max-width: 220px;
+   }
+
+}
+@media (width <= 500px){
+/*--------Intro X header---------*/
+.header-bg{
+    max-width: 400px;
+    height: 400px;
+}
+.header-bg.action{
+    max-width: 400px;
+    min-width: 399px;
+    height: 400px;
+}
+.background{
+    margin: auto;
+       max-width: 400px;
+       width: 100%;
+       max-height: 400px;
+       animation-name: BgIntro1;
+       
+   }
+
+}
+@media (width <= 400px){
+    /*--------Intro X header---------*/
+    .header-bg{
+        max-width: 300px;
+        height: 300px;
+    }
+    .header-bg.action{
+        max-width: 300px;
+        min-width: 299px;
+        height: 300px;
+    }
+    .background{
+        margin: auto;
+           max-width: 300px;
+           width: 100%;
+           max-height: 300px;
+           animation-name: BgIntro1;
+           
+       }
+    
+    }
+    

@@ -81,27 +81,6 @@
     transform: scale(1.05);
     box-shadow: 20px 20px 60px #8d6767;
 }
-/*------------slider----------*/
-/* .slide{
-	display: none;
-	position: absolute;
-	opacity: 0;
-	width: 0%;
-	visibility: hidden;
-	transition: all 0.5s;
-	top: 0;
-	left: -100%;
-}
-.slide.action {
-	display: block;
-	width: 100%;
-	opacity: 1;
-	visibility: visible;
-	position: relative;
-	left: 0;
-} */
-/*------------slider----------*/
-
 .header-bg{
     max-width: 700px;
     height: 700px;
@@ -204,271 +183,150 @@
 .satisfied-2,.satisfied-line2{
     display: none;
 }
-/*-------------responsive------------*/
-
-
-
-
-/*--------Intro X header---------*/
-@media (width <= 1532px){
-    /*--------Intro X header---------*/
-    .satisfied-2{
-        display: block;
-        margin-top: 70px;
-    }
-    .satisfied-line2{
-        display: block;
-        max-width: 290px;
-        margin-top: -5px;
-    }
-    .satisfied{
-        display: none;
-    }
-    .satisfied-line{
-        max-width: 290px;
-    }
-
-    /*--------Intro X header---------*/
+/*-----------info-------------*/
+.info{
+    width: 100%;
+    margin-top: 135px;
 }
-@media (width <= 1200px){
-    /*--------Intro X header---------*/
+.info-wrapper{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+.info-wrapper.action{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
 
-    .intro-wrapper{
-        display: flex;
-        margin: 0 auto;
-        margin-top: 100px;
-        gap: 60px;
-    }
-    .background{
-        max-width: 500px;
-        width: 100%;
-        max-height: 500px;
-    }
+
+    animation-name: headerIntro2;
+	animation-duration: 3s;
+}
+.much-info{
+    text-align: end;
+    margin-top: 80px;
+    max-width: 345px;
+}
+
+
+
+.much-info-name{
+    font-family:"GlacialIndifference-Bold" ;
+    font-size: 40px;
+    color: #222;
+}
+.much-info-work{
+    font-family:"GlacialIndifference-Regular" ;
+    font-size: 14px;
+    color: #DAAE19;
+}
+.mini-info{
+    font-family:"GlacialIndifference-Regular" ;
+    font-size: 15px;
+    color: #555555;
+    margin-top: 30px;
+}
+.much-info-HireMe{
+    margin-top: 60px;
+    padding: 15px 50px;
+    background-color: #E93656;
+    border: 1px solid #E93656;
+    color: #ffffff;
+    font-family:"GlacialIndifference-Regular" ;
+    transition: all.3s
+}
+.much-info-HireMe:hover{
+    background-color: transparent;
+    color: #E93656;
+    box-shadow: 20px 20px 60px #535353;
+}
+.info-image{
+    max-width: 430px;
+    width: 100%;
+}
+.info-image-img{
+    max-width: 429px;
+    width: 100%;
+    box-shadow: 20px 20px 60px #535353;
+}
+
+
+.info-skils{
+    max-width: 300px;
+    width: 100%;
+}
+
+.html,.css,.js{
+    margin-top: 60px;
+    max-width: 275px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.html-div,.css-div,.js-div{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.num,.lines-percent{
+    font-family: 'Poppins', sans-serif;
+ color: #E93656;
+ font-size: 20px;
+}
+.html-100-2,.css-100-2,.js-100-2{
+    font-family: 'Poppins', sans-serif;
+    color: #212121;
+    font-size: 20px;
+}
+.lines-80{
+    height: 5px;
+    background-color: #E93656;
+    margin-top:10px;
+    border-radius: 10%;
+
+
+    width: 0%;
+}
+.lines-80.actionHtmlCss{
+    height: 5px;
+    background-color: #E93656;
+    margin-top:10px;
+    border-radius: 10%;
+
+
+    width: 80%;
+    animation-name: lineWidht2 ;
+    animation-duration: 4s;
+}
+
+.lines-50{
+    height: 5px;
+    background-color: #E93656;
+    margin-top:10px;
+    border-radius: 10%;
+
+
+    width: 0%;
+}
+.lines-50.actionReactJs{
+    height: 5px;
+    background-color: #E93656;
+    margin-top:10px;
+    border-radius: 10%;
+
     
-    .header-bg{
-        max-width: 500px;
-        height: 500px;
-    }
-    .header-bg.action{
-        max-width: 500px;
-        min-width: 499px;
-        height: 500px;
-    }
-    .my-info{
-        margin-top: 100px;
-        max-width: 610px;
-        gap: 8px;
-        animation-name: infoIntro2;
-        
-    }
-    .socials{
-        gap: 10px;
-        padding-top: 30px;
-        
-    }
-    .my-name1{
-        font-size: 35px;
-    }
-    .my-name2{
-        font-size: 55px;
-    }
-    .my-work{
-        font-size: 22px;
-    }
-    .satisfied-2{
-        display: block;
-        margin-top: 40px;
-    }
-    .satisfied-line2{
-        display: block;
-        max-width: 290px;
-        margin-top: -5px;
-    }
-    .satisfied{
-        display: none;
-    }
-    .satisfied-line{
-        max-width: 290px;
-    }
-   
+    width: 50%;
+    animation-name: lineWidht4 ;
+    animation-duration: 4s;
 }
-@media (width <= 1024px){
-     /*--------Intro X header---------*/
-     .intro-wrapper{
-        display: flex;
-        margin: 0 auto;
-        margin-top: 100px;
-        gap: 40px;
-    }
-    .background{
-        max-width: 400px;
-        width: 100%;
-        max-height: 400px;
-    }
-    .my-info{
-        margin-top: 50px;
-        max-width: 610px;
-        gap: 8px;
-        animation-name: infoIntro3;
-        
-    }
-    .header-bg{
-        max-width: 400px;
-        height: 400px;
-    }
-    .header-bg.action{
-        max-width: 400px;
-        min-width: 399px;
-        height: 400px;
-    }
-    .socials{
-        gap: 7px;
-        padding-top: 20px;
-        
-    }
-    .my-name1{
-        font-size: 30px;
-    }
-    .my-name2{
-        font-size: 50px;
-    }
-    .my-work{
-        font-size: 18px;
-    }
-    .satisfied-2{
-        display: block;
-        margin-top: 30px;
-    }
-    .satisfied-line2{
-        display: block;
-        max-width: 250px;
-        margin-top: -5px;
-    }
-    .satisfied{
-        display: none;
-    }
-    .satisfied-line{
-        max-width: 250px;
-    }
 
-}
-@media (width <= 768px){
-    /*--------Intro X header---------*/
-    .header{
-        display: none;
-    }
-    .intro{
-        height: 800px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .intro-wrapper{
-       display: flex;
-       margin: 0 auto;
-       margin-top: 0px;
-       gap: 20px;
-       flex-wrap: wrap;
-   }
-   
-   .background{
-    margin: auto;
-       max-width: 500px;
-       width: 100%;
-       max-height: 500px;
-       animation-name: BgIntro1;
-       
-   }
-   .my-info{
-       margin: auto;
-       margin-top: 30px;
-       max-width: 610px;
-       gap: 8px;
-       animation-name: infoIntro4; 
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-   }
-   
-   .header-bg{
-       max-width: 500px;
-       height: 500px;
-   }
-   .header-bg.action{
-       max-width: 500px;
-       min-width: 499px;
-       height: 500px;
-   }
-   .socials{
-       gap: 5px;
-       padding-top: 10px;
-       
-   }
-   .my-name1{
-       font-size: 25px;
-   }
-   .my-name2{
-       font-size: 45px;
-   }
-   .my-work{
-       font-size: 15px;
-   }
-   .satisfied-2{
-       display: block;
-       margin-top: 20px;
-   }
-   .satisfied-line2{
-       display: block;
-       max-width: 220px;
-       margin-top: -5px;
-   }
-   .satisfied{
-       display: none;
-   }
-   .satisfied-line{
-       max-width: 220px;
-   }
 
+.html-line-empty,.css-line-empty,.js-line-empty{
+    height: 5px;
+    background-color: #f0f0f0;
+    margin-bottom:-15px;
+    width: 100%;
+    border-radius: 10%;
 }
-@media (width <= 500px){
-/*--------Intro X header---------*/
-.header-bg{
-    max-width: 400px;
-    height: 400px;
-}
-.header-bg.action{
-    max-width: 400px;
-    min-width: 399px;
-    height: 400px;
-}
-.background{
-    margin: auto;
-       max-width: 400px;
-       width: 100%;
-       max-height: 400px;
-       animation-name: BgIntro1;
-       
-   }
-
-}
-@media (width <= 400px){
-    /*--------Intro X header---------*/
-    .header-bg{
-        max-width: 300px;
-        height: 300px;
-    }
-    .header-bg.action{
-        max-width: 300px;
-        min-width: 299px;
-        height: 300px;
-    }
-    .background{
-        margin: auto;
-           max-width: 300px;
-           width: 100%;
-           max-height: 300px;
-           animation-name: BgIntro1;
-           
-       }
-    
-    }
-    

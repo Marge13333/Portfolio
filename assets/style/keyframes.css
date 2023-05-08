@@ -7,6 +7,23 @@
 		width: 100%;
 	}
 }
+@keyframes lineWidht2 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+@keyframes lineWidht4 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50%;
+	}
+}
 @keyframes infoIntro {
 	0% {
 		margin-top: 0;

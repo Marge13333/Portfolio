@@ -126,7 +126,6 @@ function checkBox(){
 	MuchInfo.forEach((box) =>{
 		const boxTop = box.getBoundingClientRect().top;
 
-
 		if(boxTop < triggerBottom){
 			box.classList.add('action')
 			HtmlCssCount()
@@ -135,5 +134,59 @@ function checkBox(){
 	})
 }
 }SecondSectionTransition()
+
+
+
+function InfoSectionAnimation(){
+	const InfoBottom = document.querySelectorAll('.info-bottom-wrapper')
+
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	InfoBottom.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+			HtmlCssCount()
+		}
+		
+	})
+}
+}InfoSectionAnimation()
+
+
+
+//////////Best Service
+
+
+function bestServiceAnimation(){
+	const box= document.querySelectorAll('.box')
+
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	box.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+			HtmlCssCount()
+		}
+		
+	})
+}
+} bestServiceAnimation()
+
 
 

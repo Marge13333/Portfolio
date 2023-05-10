@@ -79,10 +79,27 @@
     .satisfied-line{
         max-width: 290px;
     }
+    /* best service */
+    .best-service{
+        margin-top: 170px;
+        margin-bottom: 120px;
+    }
+    .best-service-wrapper{
+        display: grid;
+        grid-template-columns: 285px 285px 285px;
+        gap: 10px;
+        max-width: 875px;
+        width: 100%;
+        margin: auto;
+    }
    
 }
 @media (width <= 1024px){
      /*--------Intro X header---------*/
+
+     .intro{
+        height: 600px;
+     }
      .intro-wrapper{
         display: flex;
         margin: 0 auto;
@@ -139,6 +156,115 @@
     .satisfied-line{
         max-width: 250px;
     }
+      /*Second Section*/
+   .info{
+    width: 100%;
+    margin-top: 35px;
+}
+.info-wrapper{
+    gap: 40px;
+}
+.info-wrapper.action{
+    gap: 40px;
+
+}
+.much-info{
+    text-align: end;
+    margin-top: 40px;
+    max-width: 280px;
+}
+.much-info-name{
+    font-size: 35px;
+}
+.much-info-work{
+    font-size: 12px;
+}
+.mini-info{
+    font-size: 12px;
+    margin-top: 27px;
+}
+.much-info-HireMe{
+    margin-top: 50px;
+    padding: 15px 50px;
+}
+
+.info-image{
+    max-width: 370px;
+}
+.info-image-img{
+    max-width: 669px;
+    min-width: 300px;
+}
+.info-skils{
+    max-width: 280px;
+}
+
+.html,.css,.js{
+    margin-top: 50px;
+    max-width: 245px;
+}
+.num,.lines-percent{
+ font-size: 18px;
+}
+.html-100-2,.css-100-2,.js-100-2{
+    font-size: 18px;
+}
+.lines-80{
+    height: 5px;
+    background-color: #E93656;
+    margin-top:8px;
+    border-radius: 10%;
+
+
+    width: 0%;
+}
+.lines-80.actionHtmlCss{
+    margin-top:8px;
+}
+
+.lines-50{
+
+    margin-top:8px;
+}
+.lines-50.actionReactJs{
+    border-radius: 10%;
+}
+.html-line-empty,.css-line-empty,.js-line-empty{
+    margin-bottom:-17px;
+}
+
+/*----------Second Section bottom info------------------*/
+.info-bottom{
+    margin-top: 100px;
+    width: 100%;
+    height: 310px;
+    background-color: #131a36;
+}
+
+.info-bottom-wrapper{
+    gap: 30px;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+.info-bottom-wrapper.action{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0;
+
+}
+/* best service */
+.best-service{
+    margin-top: 170px;
+    margin-bottom: 120px;
+}
+.best-service-wrapper{
+    display: grid;
+    grid-template-columns: 285px 285px ;
+    gap: 10px;
+    max-width: 580px;
+    width: 100%;
+    margin: auto;
+}
 
 }
 @media (width <= 768px){
@@ -161,9 +287,9 @@
    
    .background{
     margin: auto;
-       max-width: 500px;
+       max-width: 480px;
        width: 100%;
-       max-height: 500px;
+       max-height: 480px;
        animation-name: BgIntro1;
        
    }
@@ -179,13 +305,13 @@
    }
    
    .header-bg{
-       max-width: 500px;
-       height: 500px;
+       max-width: 480px;
+       height: 480px;
    }
    .header-bg.action{
-       max-width: 500px;
-       min-width: 499px;
-       height: 500px;
+       max-width: 480px;
+       min-width: 479px;
+       height: 480px;
    }
    .socials{
        gap: 5px;
@@ -216,25 +342,117 @@
    .satisfied-line{
        max-width: 220px;
    }
+   /*Second Section*/
+.info-wrapper{
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.much-info{
+    text-align: start;
+}
+.info-skils{
+    max-width: 350px;
+    width: 100%;
+}
+.info-skils{
+    max-width: 300px;
+}
+
+.html,.css,.js{
+    margin-top: 50px;
+    max-width: 270px;
+}
+  /*----------Second Section bottom info------------------*/
+  .info-bottom{
+    margin-top: 100px;
+    width: 100%;
+    height: 340px;
+    background-color: #131a36;
+}
+
+.info-bottom-wrapper{
+    gap: 20px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.info-bottom-wrapper.action{
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 0;
+
+    animation-name:headerIntro1 ;
+    animation-duration: 4s;
+}
+.phone-info,.addres-info,.Email-info{
+    gap: 25px;
+    max-width: 250px;
+    width: 100%;
+}
+.phone-info,.addres-info,.Email-info{
+    gap: 30px;
+}
+.phone-info.action{
+    gap: 30px;
+}
+.phone-svg,.map-addres-vsg,.email-svg{
+    width: 26px;
+    height: 25px;
+}
+.info-svg-wrapper{
+    padding: 20px;
+}
+.info-svg-wrapper:hover{
+    border: 3px solid #E93656;
+    background-color: #E93656;
+    transform: scale(1.05);
+}
+.number-info,.user-adres-info,.email-address-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.info-ttile{
+    font-family:"Muli" ;
+    font-size: 20px;
+    color: #ffffff;
+}
+.info-para{
+    font-family:"Muli" ;
+    font-size: 11px;
+    color: #DFDFDF;
+}
+/* best service */
+.best-service{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.best-service-wrapper{
+    grid-template-columns: 285px ;
+    gap: 5px;
+    max-width: 295px;
+}
 
 }
 
 @media (width <= 500px){
     /*--------Intro X header---------*/
+    .info{
+        overflow: hidden;
+    }
     .header-bg{
-        max-width: 300px;
-        height: 300px;
+        max-width: 280px;
+        height: 280px;
     }
     .header-bg.action{
-        max-width: 300px;
-        min-width: 299px;
-        height: 300px;
+        max-width: 280px;
+        min-width: 279px;
+        height: 280px;
     }
     .background{
         margin: auto;
-           max-width: 300px;
+           max-width: 280px;
            width: 100%;
-           max-height: 300px;
+           max-height: 280px;
            animation-name: BgIntro1;
            
        }

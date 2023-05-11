@@ -485,3 +485,93 @@
     cursor: default;
     transition: all.5s;
 }
+/*-------------------- recommmm-------------- */
+.recom{
+    background-image: url(/assets/images/clip.jpg);
+    width: 100%;
+    height: 570px;
+}
+.recom-wrapper{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+.recom-wrapper-inner{
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.recom-change{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.recom-change{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    display: none;
+}
+.recom-change.action{
+    display: block;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+
+    animation-name:actionN1  ;
+    animation-duration: 3s;
+}
+
+.recom-text{
+    font-size: 15px;
+    color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    text-align: end;
+}
+
+.recom-img{
+    padding: 15px;
+    border:3px dotted #ffffff ;
+    border-radius: 50%;
+    transition: all.4s;
+}
+.recom-img:hover{
+    transform: scale(1.05);
+   background-color: #E93656;
+}
+.recom-job{
+
+font-size: 13px;
+color: #E93656;
+}
+.recom-title{
+    font-size: 28px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.btns{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.recom-btns{
+    border: 2px solid #E93656;
+    padding: 8px;
+}
+.recom-btns.action{
+    border: 2px solid #E93656;
+    padding: 8px;
+    
+
+background-color: #E93656;
+    animation-name:recomBtns  ;
+    animation-duration: 0.3s;
+}
+

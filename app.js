@@ -167,7 +167,6 @@ function checkBox(){
 
 function bestServiceAnimation(){
 	const box= document.querySelectorAll('.box')
-
 window.addEventListener('scroll', checkBox)
 
 checkBox()
@@ -190,3 +189,45 @@ function checkBox(){
 
 
 
+///////Recom...
+function mainSlider() {
+	const slides = document.querySelectorAll(".recom-change");
+	const sliderBtns = document.querySelectorAll(".recom-btns");
+
+	let activeIndex = 0;
+
+	function renderSlides() {
+		slides.forEach((el, i) => {
+			if (i === activeIndex) {
+				el.classList.add("action");
+			} else {
+				el.classList.remove("action");
+				el.classList.add('action-N2')
+			}
+		});
+		sliderBtns.forEach((el, i) => {
+			if (i === activeIndex) {
+				el.classList.add("action");
+			} else {
+				el.classList.remove("action");
+			}
+		});
+	}
+
+	function renderBullets() {
+		sliderBtns.forEach((btn, index) => {
+			btn.addEventListener("click", () => {
+				activeIndex = index;
+				renderSlides();
+				console.log("log")
+
+			});
+		});
+	}
+
+
+	renderSlides();
+	renderBullets();
+
+}
+mainSlider()

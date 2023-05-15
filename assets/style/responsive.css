@@ -92,6 +92,40 @@
         width: 100%;
         margin: auto;
     }
+     /* latest projects */
+
+     .projects-filter-div.action{
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .projects-btns{
+        height: auto;
+        width: 100%;
+        max-width: 800px;
+        align-items: center;
+        margin: auto;
+        background-color: #15263E;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        padding: 60px;
+        flex-wrap:wrap;
+    
+    }
+    .latest-projects-title{
+        display: inline-block;
+        font-size: 70px;
+        margin-left: 0px;
+        color: #2E2E2E;
+    }
+    .latest-projects-title.action{
+        display: inline-block;
+        font-size: 60px;
+        margin-left: 0px;
+    
+        animation-name:LastPro2  ;
+    }
    
 }
 @media (width <= 1024px){
@@ -262,6 +296,16 @@
     grid-template-columns: 285px 285px ;
     gap: 10px;
     max-width: 580px;
+    width: 100%;
+    margin: auto;
+}
+ /* latest projects */
+
+ .projects{
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    max-width: 600px;
+    height: 1050px;
     width: 100%;
     margin: auto;
 }
@@ -486,6 +530,25 @@
 background-color: #E93656;
     animation-name:recomBtns  ;
     animation-duration: 0.3s;
+}
+ /*latest projects  */
+ .projects{
+    display: grid;
+    grid-template-columns:300px ;
+    max-width: 300px;
+    height: 2100px;
+    width: 100%;
+    margin: auto;
+}
+.latest-projects-title{
+    font-size: 50px;
+  
+}
+.latest-projects{
+    max-width: 1171px;
+
+    margin: 100px auto;
+    gap: 30px;
 }
 
 }

@@ -93,7 +93,10 @@
                 <div class="html">
                     <div class="html-div">
                         <p class="html-100-2">Html</p>
-                        <span class="num" data-val="80">0%</span>
+                        <div class="nums">
+                            <span class="num" data-max="80">0</span>
+                        </div>
+                        
                         <p class="lines-percent">%</p>
                     </div>
                     <span class="html-line-empty"></span>
@@ -102,7 +105,9 @@
                 <div class="css">
                     <div class="css-div">
                         <p class="css-100-2">Css</p>
-                    <span class="num" data-val="80">0%</span>
+                        <div class="nums">
+                            <span class="num" data-max="80">0</span>
+                        </div>
                     <p class="lines-percent">%</p>
                     </div>
                     <span class="css-line-empty"></span>
@@ -111,7 +116,9 @@
                 <div class="js">
                     <div class="js-div">
                         <p class="js-100-2">Javascript</p>
-                        <span class="num" data-val="50">0%</span>
+                        <div class="nums">
+                            <span class="num" data-max="50">0</span>
+                        </div>
                         <p class="lines-percent">%</p>
                     </div>
                     <span class="js-line-empty"></span>
@@ -120,7 +127,9 @@
                 <div class="js">
                     <div class="js-div">
                         <p class="js-100-2">React</p>
-                        <span class="num" data-val="50">0%</span>
+                        <div class="nums">
+                            <span class="num" data-max="50">0</span>
+                        </div>
                         <p class="lines-percent">%</p>
                     </div>
                     <span class="js-line-empty"></span>
@@ -258,8 +267,68 @@
         </div>
         
     </section>
-    
+    <section class="latest-projects">
+        <h2 class="latest-projects-title">Latest Projects</h2>
+        <div class="projects-filter-div">
+            <div class="projects-btns">
+            <button class="projects-btn"data-filter="all">All</button>
+            <button class="projects-btn"data-filter="work-ideas">Work ideas</button>
+            <button class="projects-btn"data-filter="mock-up">Mock Up</button>
+            <button class="projects-btn" data-filter="psd-design">PSD Design</button>
+            <button class="projects-btn"data-filter="logo">Logo</button>
+            <button class="projects-btn"data-filter="presentatione">Presentatione</button>
+            <button class="projects-btn"data-filter="icon">Icon</button>
+        </div>
+        <div class="projects">
+            <div class="projects-box work-ideas" id="work-ideas">
+                <div class="inner-projects ">
+                    <div class="heart-photo"><img class="heart-svg" src="assets/images/heart.svg" alt="heart"></div>
+                <p class="project-data">6 MONTS AGO</p>
+                <h4 class="projects-title">Work ideas</h4>
+                </div>
+            </div>
+            <div class="projects-box icon"id="Icon">
+                <div class="inner-projects ">
+                    <div class="heart-photo"><img class="heart-svg" src="assets/images/heart.svg" alt="heart"></div>
+                    <p class="project-data">10 MONTS AGO</p>
+                    <h4 class="projects-title">Icon</h4>
+                </div>
+            </div>
+            <div class="projects-box logo" id="logo-pro">
+                <div class="inner-projects ">
+                    <div class="heart-photo"><img class="heart-svg" src="assets/images/heart.svg" alt="heart"></div>
+                <p class="project-data">3 MONTS AGO</p>
+                <h4 class="projects-title">Logo</h4>
+                </div>
+            </div>
+            <div class="projects-box psd-design" id="psd" >
+                <div class="inner-projects">
+                    <div class="heart-photo"><img class="heart-svg" src="assets/images/heart.svg" alt="heart"></div>
+                <p class="project-data">9 MONTS AGO</p>
+                <h4 class="projects-title">PSD Design</h4> 
+                </div>
+            </div>
+            <div class="projects-box presentatione"id="Presentatione">
+                <div class="inner-projects">
+                    <div class="heart-photo"><img class="heart-svg" src="assets/images/heart.svg" alt="heart"></div>
+                <p class="project-data">7 MONTS AGO</p>
+                <h4 class="projects-title">Presentatione</h4>
+                </div>
+            </div>
+            <div class="projects-box mock-up" id="mockup">
+                <div class="inner-projects">
+                    <div class="heart-photo"><img class="heart-svg" src="assets/images/heart.svg" alt="heart"></div>
+                <p class="project-data">12 MONTS AGO</p>
+                <h4 class="projects-title">3D Mockup Design</h4>
+                </div>
+            </div>
+        </div>
+        </div>
 
+
+    </section>    
+    
+<script src="index.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

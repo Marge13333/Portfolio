@@ -520,6 +520,8 @@
     display: block;
     display: flex;
     gap: 50px;
+    max-width: 1100px;
+    width: 100%;
     align-items: center;
 
 
@@ -574,4 +576,202 @@ background-color: #E93656;
     animation-name:recomBtns  ;
     animation-duration: 0.3s;
 }
+/* Last Projects */
+.latest-projects{
+    max-width: 1171px;
+    width: 100%;
 
+    margin: 150px auto;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.latest-projects-title{
+    display: inline-block;
+    font-size: 70px;
+    margin-left: 250px;
+    color: #2E2E2E;
+}
+.latest-projects-title.action{
+    display: inline-block;
+    font-size: 70px;
+    margin-left: 250px;
+
+    animation-name:LastPro1  ;
+    animation-duration: 3s;
+    color: #2E2E2E;
+}
+
+
+.projects-filter-div.action{
+    display: flex;
+    gap: 30px;
+    animation-name:LastPro2  ;
+    animation-duration: 3s;
+}
+.projects-btns{
+    height: 400px;
+    width: 100%;
+    max-width: 240px;
+    background-color: #15263E;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+
+}
+.projects-btn{
+    font-size: 20px;
+    text-align: start;
+background-color: transparent;
+border: transparent;
+color: #ffffff;
+transition: all.3s;
+}
+.projects-btn.active{
+    font-size: 20px;
+    text-align: start;
+background-color: transparent;
+border: transparent;
+color: #ffffff;
+transition: all.3s;
+
+
+animation-name:LastPro3 ;
+    animation-duration: 3s;
+}
+
+.projects-btn{
+    font-size: 20px;
+    text-align: start;
+background-color: transparent;
+border: transparent;
+color: #ffffff;
+list-style: none;
+transition: all.3s;
+cursor: pointer;
+}
+
+.projects-btn.action{
+    color: #E93656;
+    list-style: none;
+    cursor: pointer;
+}
+
+.projects-btn:hover{
+    color: #E93656;
+}
+.projects-btn.action::after{
+    content: "";
+	width: 100%;
+	height: 2px;
+    margin-top: 10px;
+	background-color: #E93656;
+	display: block;
+    margin-top: 5px;
+    border-radius: 1px;
+    
+    animation-name:lastProjects1   ;
+    animation-duration: 1s;
+}
+
+
+.inner-projects.show{
+    animation-name: actionN1   ;
+    animation-duration: 1s;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 300px 300px  300px ;
+    max-width: 900px;
+    height: 700px;
+    width: 100%;
+    margin: auto;
+}
+#work-ideas{
+    height: 350px;
+    background-image: url(/assets/images/img1\ \(1\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+#mockup{
+    height: 350px;
+    background-image: url(/assets/images/img1\ \(2\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+#psd{
+    height: 350px;
+    background-image: url(/assets/images/img1\ \(3\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+#logo-pro{
+    height: 350px;
+    background-image: url(/assets/images/img1\ \(4\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+#Presentatione{
+    height: 350px;
+    background-image: url(/assets/images/img1\ \(5\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+#Icon{
+    height: 350px;
+    background-image: url(/assets/images/img1\ \(6\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+.projects-box{
+    transition: all.2s;
+}
+.projects-box.action{
+    animation-name:BgIntro6 ;
+    animation-duration: 0.7s;
+}
+.projects-box:hover {
+opacity: 0.9;
+}
+.inner-projects{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+    gap: 15px;
+}
+.projects-box:hover .inner-projects{
+    display: flex;
+    opacity: 1;
+
+    animation-name:BgIntro1 ;
+    animation-duration: 0.7s;
+}
+.heart-photo{
+    padding: 18px 20px ;
+    border: 1px solid #E93656;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all.2s;
+}
+.heart-photo.action{
+    padding: 18px 20px ;
+    border: 1px solid #E93656;
+    border-radius: 50%;
+    background-color: #15263E;
+    transition: all.2s;
+}
+.heart-photo:hover{
+    transform: scale(1.10);
+}
+.project-data{
+    font-size: 11px;
+    color: #ffffff;
+}
+.projects-title{
+    font-size: 23px;
+    color: #ffffff;
+}

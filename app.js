@@ -90,26 +90,6 @@ function checkBox(){
 }
 ReactJsLine()
 
-function HtmlCssCount(){
-	let valueDisplays = document.querySelectorAll(".num")
-	let interval = 2000;
-
-	valueDisplays.forEach((valueDisplay) =>{
-		let startValue = 0;
-		let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-		let duration = Math.floor(interval/endValue);
-		let counter = setInterval(function(){
-			startValue += 1;
-			valueDisplay.textContent= startValue;
-			if (startValue === endValue){
-				clearInterval(counter);
-			}
-		},duration)
-	}
-	)
-}
-
-
 ///////// Second Section animation
 
 function SecondSectionTransition(){
@@ -128,7 +108,6 @@ function checkBox(){
 
 		if(boxTop < triggerBottom){
 			box.classList.add('action')
-			HtmlCssCount()
 		}
 		
 	})
@@ -153,7 +132,7 @@ function checkBox(){
 
 		if(boxTop < triggerBottom){
 			box.classList.add('action')
-			HtmlCssCount()
+		
 		}
 		
 	})
@@ -180,7 +159,7 @@ function checkBox(){
 
 		if(boxTop < triggerBottom){
 			box.classList.add('action')
-			HtmlCssCount()
+		
 		}
 		
 	})
@@ -231,3 +210,99 @@ function mainSlider() {
 
 }
 mainSlider()
+
+/////////////
+const Btns = document.querySelectorAll('.projects-btn');
+const projects = document.querySelectorAll('.projects-box');
+
+Btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    Btns.forEach(btn => btn.classList.remove('action'));
+    btn.classList.add('action');
+
+    const filter = btn.getAttribute('data-filter');
+    projects.forEach(project => {
+      if ( project.classList.contains(filter)) {
+        project.style.display = 'block';
+		project.classList.add('action')
+      } else if(filter === 'all'){
+		project.classList.add('action')
+        project.style.display = 'block';
+      }else {
+        project.style.display = 'none';
+		project.classList.remove('action')
+      }
+    });
+    
+  });
+});
+
+
+function LastProjectsAnimationTitle(){
+	const Title= document.querySelectorAll('.latest-projects-title')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	Title.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+}
+LastProjectsAnimationTitle()
+
+
+
+function LastProjectsAnimationSection(){
+	const Sect= document.querySelectorAll('.projects-filter-div')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	Sect.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+} LastProjectsAnimationSection()
+
+function LastProjectsAnimationList(){
+	const List= document.querySelectorAll('.projects-btn')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	List.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('active')
+		
+		}
+		
+	})
+}
+} LastProjectsAnimationList()

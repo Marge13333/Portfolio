@@ -775,3 +775,135 @@ opacity: 0.9;
     font-size: 23px;
     color: #ffffff;
 }
+/*Latest Articles*/
+
+.articles{
+    overflow: hidden;
+    margin: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+.articles-title{
+    display: inline-block;
+    margin: auto;
+    font-size: 80px;
+    color: #2f2f2f;
+}
+.articles-box1{
+    
+    max-width: 1750px;
+    width: 100%;
+    margin-left: 150px;
+    display: flex;
+
+
+}
+.articles-box1{
+    max-width: 1750px;
+    width: 100%;
+    margin-left: 150px;
+    display: flex;
+}
+.articles-box2{
+    max-width: 1750px;
+    width: 100%;
+    margin-right: 150px;
+    display: flex;
+}
+.articles-box1.action{
+    max-width: 1750px;
+    width: 100%;
+    margin-left: 150px;
+    display: flex;
+
+
+    animation-name: articles1 ;
+    animation-duration: 3s;
+}
+.articles-box2.action{
+    max-width: 1750px;
+    width: 100%;
+    margin-right: 150px;
+    display: flex;
+
+
+    animation-name: articles5 ;
+    animation-duration: 3s;
+}
+.articles-para{
+    font-size: 16px;
+    color: #888;
+    margin-top: 30px;
+
+
+}
+.articles-icon{
+    border-radius: 50%;
+    transition: all.3s;
+}
+.articles-icon:hover{
+    box-shadow: 20px 20px 60px #E93656;
+
+}
+.article-text{
+    max-width: 800px;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 10px;
+    background-color: #FAFAFA;
+}
+.article-text2{
+    max-width: 800px;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 200px;
+    background-color: #FAFAFA;
+}
+
+.article-images{
+    display: flex;
+    max-width: 950px;
+    width: 100%;
+}
+.article-date{
+    max-width: 132px;
+    width: 100%;
+    background-color: #15263E;
+}
+
+.data-article{
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    display: inline-block;
+    margin-top: 240px;
+    font-size: 27px;
+    color: #E93656;
+}
+.article-box-wallpaper{
+    max-width: 823px;
+    height: 525px;
+    }
+
+.articles-mini-para{
+    font-size: 14px;
+    color: #888;
+    margin-top: 30px;
+}
+.articles-box-title{
+    font-size: 40px;
+    margin-top: 5px;
+    color: #161616;
+}
+.articles-para{
+font-size: 16px ;
+color: #888;
+max-width:570px ;
+width: 100%;
+}
+
+     
+
+
+

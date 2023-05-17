@@ -283,6 +283,7 @@ function checkBox(){
 		
 	})
 }
+
 } LastProjectsAnimationSection()
 
 function LastProjectsAnimationList(){
@@ -306,3 +307,48 @@ function checkBox(){
 	})
 }
 } LastProjectsAnimationList()
+// ////////////////articles
+
+function ArtcilesTransBoxsFirst(){
+	const box= document.querySelectorAll('.articles-box1')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	box.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+} ArtcilesTransBoxsFirst()
+
+function ArtcilesTransBoxsSecond(){
+	const box= document.querySelectorAll('.articles-box2')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	box.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+} ArtcilesTransBoxsSecond()

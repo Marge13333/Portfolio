@@ -241,3 +241,65 @@
 		
 	}
 }
+/* articles */
+@keyframes articles1 {
+	0% {
+		margin-left: 968px;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 150px;
+		opacity: 1;
+		
+	}
+}
+@keyframes articles4 {
+	0% {
+		margin-left: 968px;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 70px;
+		opacity: 1;
+		
+	}
+}
+
+@keyframes articles3 {
+	0% {
+		margin-left: 968px;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 70px;
+		opacity: 1;
+		
+	}
+}
+@keyframes articles4 {
+	0% {
+		margin-left: 500px;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 0px;
+		opacity: 1;
+		
+	}
+}
+
+
+
+
+
+@keyframes articles5{
+	0% {
+		margin-left: -568px;
+		opacity: 0;
+	}
+	100% {
+		margin-left:0;
+		opacity: 1;
+		
+	}
+}

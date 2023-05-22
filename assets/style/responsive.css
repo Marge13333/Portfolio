@@ -204,6 +204,16 @@
         .data-article{
             margin-top: 170px;
      }
+     /* rosa */
+     .rosa-wrapper{
+        display: grid;
+        grid-template-columns: 230px 230px 230px  ;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1170px;
+        width: 100%;
+        margin: auto;
+    }
    
 }
 @media (width <= 1024px){
@@ -383,7 +393,6 @@
     display: grid;
     grid-template-columns: 300px 300px ;
     max-width: 600px;
-    height: 1050px;
     width: 100%;
     margin: auto;
 }
@@ -671,11 +680,13 @@ background-color: #E93656;
     animation-duration: 0.3s;
 }
  /*latest projects  */
+ .latest-projects{
+    overflow: hidden;
+ }
  .projects{
     display: grid;
-    grid-template-columns:300px ;
-    max-width: 300px;
-    height: 2100px;
+    grid-template-columns: 250px 250px ;
+    max-width: 500px;
     width: 100%;
     margin: auto;
 }
@@ -683,11 +694,42 @@ background-color: #E93656;
     font-size: 50px;
   
 }
+
 .latest-projects{
     max-width: 1171px;
 
     margin: 100px auto;
     gap: 30px;
+}
+#work-ideas{
+   max-width: 250px;
+   height: 300px;
+   width: 100%;
+}
+#mockup{
+    max-width: 250px;
+    height: 300px;
+    width: 100%;
+}
+#psd{
+    max-width: 250px;
+    height: 300px;
+    width: 100%;
+}
+#logo-pro{
+    max-width: 250px;
+    height: 300px;
+    width: 100%;
+}
+#Presentatione{
+    max-width: 250px;
+    height: 300px;
+    width: 100%;
+}
+#Icon{
+    max-width: 250px;
+    height: 300px;
+    width: 100%;
 }
 .articles{
         margin-top: 100px;
@@ -764,11 +806,29 @@ background-color: #E93656;
         max-width: 850px;
         height: 500px;
         }
+        /* rosa */
+        .rosa-wrapper{
+            display: grid;
+            grid-template-columns: 230px 230px  ;
+            justify-content: center;
+            gap: 20px;
+        }
+        .rosa-para{
+            font-size: 12px;
+            color: #626262;
+        }
+        .rosa-name{
+            font-size: 13px;
+            color: #161616;
+        }
 
 }
 
 @media (width <= 500px){
     /*--------Intro X header---------*/
+    .latest-projects{
+        overflow: hidden;
+    }
     .info{
         overflow: hidden;
     }
@@ -789,6 +849,59 @@ background-color: #E93656;
            animation-name: BgIntro1;
            
        }
+
+
+       .latest-projects{
+        overflow: hidden;
+     }
+     .projects{
+        display: grid;
+        grid-template-columns: 150px 150px 150px ;
+        max-width: 450px;
+        width: 100%;
+        margin: auto;
+    }
+    .latest-projects-title{
+        font-size: 50px;
+      
+    }
+    
+    .latest-projects{
+        max-width: 1171px;
+    
+        margin: 100px auto;
+        gap: 30px;
+    }
+    #work-ideas{
+       max-width: 150px;
+       height: 200px;
+       width: 100%;
+    }
+    #mockup{
+        max-width: 150px;
+        height: 200px;
+        width: 100%;
+    }
+    #psd{
+        max-width: 150px;
+        height: 200px;
+        width: 100%;
+    }
+    #logo-pro{
+        max-width: 150px;
+        height: 200px;
+        width: 100%;
+    }
+    #Presentatione{
+        max-width: 150px;
+        height: 200px;
+        width: 100%;
+    }
+    #Icon{
+        max-width: 150px;
+        height: 200px;
+        width: 100%;
+    }
        /* articles */
       .article-box-wallpaper{
         max-width: 400px;
@@ -796,6 +909,22 @@ background-color: #E93656;
         }
         .article-images{
             max-width: 400px;
+        }
+        /* rosa */
+        .rosa{
+            overflow: hidden;
+        }
+        .rosa-wrapper{
+            display: grid;
+            grid-template-columns: 130px 130px  ;
+            justify-content: center;
+        }
+        
+        .rosa-title{
+            display: inline-block;
+            margin: auto;
+            font-size: 56px;
+            color: #262526;
         }
     
     }

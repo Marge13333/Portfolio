@@ -54,8 +54,6 @@ function checkBox(){
 
 		if(boxTop < triggerBottom){
 			box.classList.add('actionHtmlCss')
-		}else{
-			box.classList.remove("actionHtmlCss")
 		}
 		
 	})
@@ -81,8 +79,6 @@ function checkBox(){
 		if(boxTop < triggerBottom){
 			box.classList.add('actionReactJs')
 			
-		}else{
-			box.classList.remove("actionReactJs")
 		}
 		
 	})
@@ -198,8 +194,6 @@ function mainSlider() {
 			btn.addEventListener("click", () => {
 				activeIndex = index;
 				renderSlides();
-				console.log("log")
-
 			});
 		});
 	}
@@ -210,6 +204,29 @@ function mainSlider() {
 
 }
 mainSlider()
+
+
+function RecomTransition(){
+	const box= document.querySelectorAll('.recom-wrapper-inner')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	box.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+} RecomTransition()
 
 /////////////
 const Btns = document.querySelectorAll('.projects-btn');
@@ -352,3 +369,124 @@ function checkBox(){
 	})
 }
 } ArtcilesTransBoxsSecond()
+
+
+
+function RosaTransition(){
+	const box= document.querySelectorAll('.rosa.box')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	box.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+} RosaTransition()
+
+
+/////////////contact
+const form = document.querySelector("form"),
+	emailInput = document.querySelector("#email"),
+	UserName = document.querySelector("#name"),
+	UserWebsite= document.querySelector("#website"),
+	UserMessage= document.querySelector("#message")
+
+
+function checkEmail() {
+	const emailValue =emailInput.value.trim()
+	if (emailValue === "") {
+		emailInput.parentElement.querySelector(".message").innerHTML =
+			`<p class="error">Email is required</p>`
+
+			emailInput.classList.remove("strong");
+			emailInput.classList.add("weak");
+
+		return false;
+	} else if (!/@gmail.com$/.test(emailInput.value)) {
+		emailInput.parentElement.querySelector(".message").innerHTML =
+			`<p class="error">Email must be gmail</p>`
+			emailInput.classList.remove("strong");
+			emailInput.classList.add("weak");
+		return false;
+	} else {
+		emailInput.parentElement.querySelector(".message").innerText = "";
+			emailInput.classList.remove("weak");
+		return true;
+	}
+}
+function checkUser() {
+	const userValue = UserName.value.trim()
+	if (userValue === "") {
+		UserName.parentElement.querySelector(".message").innerHTML =
+			`<p class="error">User name is required</p>`
+
+		
+			UserName.classList.add("weak");
+		return false;
+	}else{
+		UserName.parentElement.querySelector(".message").innerHTML = "";
+		UserName.classList.remove("weak");
+		return true;
+	}
+}
+
+
+function addNewUser(userObj) {
+	fetch("https://borjomi.loremipsum.ge/api/send-message", {
+		method: "post",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(userObj),
+	})
+		.then((res) => res.json())
+		.then((data) => {
+			console.log(data);
+
+
+		});
+}
+
+emailInput.addEventListener("input", checkEmail);
+UserName.addEventListener("input", checkUser);
+
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	const isEmailValid = checkEmail()
+	const userisVaild = checkUser()
+	if (
+		isEmailValid && userisVaild 
+	) {
+		showModal("#success-modal");
+		form.reset();
+		
+			e.preventDefault();		
+			const userObj = {
+				email: email.value,
+				name: UserName.value,
+				website: UserWebsite.value,
+				message:UserMessage.value
+			};
+			addNewUser(userObj)
+	}
+});
+function showModal(selector) {
+	const modal = document.querySelector(selector);
+	if (modal) {
+		modal.classList.add("active");
+	}
+}
+
+

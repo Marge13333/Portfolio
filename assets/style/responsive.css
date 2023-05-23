@@ -1,6 +1,11 @@
 /*--------Intro X header---------*/
 @media (width <= 1532px){
     /*--------Intro X header---------*/
+    .my-name{
+        display: flex;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
     .satisfied-2{
         display: block;
         margin-top: 70px;
@@ -452,7 +457,9 @@ animation-duration: 3s;
  .articles-para {
     max-width: none;
  }
-
+.rosa{
+    overflow: hidden;
+}
 }
 @media (width <= 768px){
     /*--------Intro X header---------*/
@@ -614,9 +621,25 @@ animation-duration: 3s;
     margin-bottom: 100px;
 }
 .best-service-wrapper{
-    grid-template-columns: 285px ;
+    grid-template-columns: 185px 185px  ;
     gap: 5px;
-    max-width: 295px;
+    max-width: 390px;
+}
+.box{
+    height: 260px;
+    width: 185px;
+}
+
+.box.action{
+    height: 260px;
+    width: 185px;
+}
+.boc-para{
+    font-size: 12px;
+}
+.box-title{
+    font-family: "Glacialindifference bold";
+    font-size: 20px;
 }
 .recom-wrapper-inner {
     align-items: normal;
@@ -636,7 +659,9 @@ animation-duration: 3s;
     flex-wrap: wrap;
     gap: 35px;
     align-items: center;
-
+justify-content: center;
+text-align: center;
+flex-direction: column-reverse;
 
     animation-name:actionN1  ;
     animation-duration: 3s;
@@ -808,6 +833,7 @@ background-color: #E93656;
         }
         /* rosa */
         .rosa-wrapper{
+            overflow: hidden;
             display: grid;
             grid-template-columns: 230px 230px  ;
             justify-content: center;
@@ -820,6 +846,46 @@ background-color: #E93656;
         .rosa-name{
             font-size: 13px;
             color: #161616;
+        }
+
+        .form-boxs {
+            margin-top: 0px;
+        }
+        .contact-wrapper {
+            padding-top: 20px;
+        }
+        .upper-form{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-row-message {
+            display: flex;
+            justify-content: center;
+        }
+        .message-type{
+            max-width: 90%;
+        }
+        #email-message{
+            margin-bottom: 10px;
+        }
+        .modal{
+            margin-top: 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            padding: 15px 25px;
+        }
+        
+        .modal.active{
+            margin-top: 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            padding: 15px 25px;
+        }
+        .contact-wrapper.action {
+            padding-top: 20px;
         }
 
 }

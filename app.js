@@ -86,6 +86,8 @@ function checkBox(){
 }
 ReactJsLine()
 
+
+
 ///////// Second Section animation
 
 function SecondSectionTransition(){
@@ -165,22 +167,21 @@ function checkBox(){
 
 
 ///////Recom...
-function mainSlider() {
+function recomslider() {
 	const slides = document.querySelectorAll(".recom-change");
-	const sliderBtns = document.querySelectorAll(".recom-btns");
+	const recombuttons = document.querySelectorAll(".recom-btns");
 
 	let activeIndex = 0;
 
-	function renderSlides() {
+	function Slides() {
 		slides.forEach((el, i) => {
 			if (i === activeIndex) {
 				el.classList.add("action");
 			} else {
 				el.classList.remove("action");
-				el.classList.add('action-N2')
 			}
 		});
-		sliderBtns.forEach((el, i) => {
+		recombuttons.forEach((el, i) => {
 			if (i === activeIndex) {
 				el.classList.add("action");
 			} else {
@@ -189,21 +190,18 @@ function mainSlider() {
 		});
 	}
 
-	function renderBullets() {
-		sliderBtns.forEach((btn, index) => {
-			btn.addEventListener("click", () => {
+	function buttons() {
+		recombuttons.forEach((e, index) => {
+			e.addEventListener("click", () => {
 				activeIndex = index;
-				renderSlides();
+				Slides()
 			});
 		});
 	}
-
-
-	renderSlides();
-	renderBullets();
-
+	Slides()
+	buttons()
 }
-mainSlider()
+recomslider() 
 
 
 function RecomTransition(){
@@ -229,27 +227,35 @@ function checkBox(){
 } RecomTransition()
 
 /////////////
-const Btns = document.querySelectorAll('.projects-btn');
+const button = document.querySelectorAll('.projects-btn');
 const projects = document.querySelectorAll('.projects-box');
 
-Btns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    Btns.forEach(btn => btn.classList.remove('action'));
-    btn.classList.add('action');
+button.forEach(e => {
+  e.addEventListener('click', () => {
 
-    const filter = btn.getAttribute('data-filter');
+
+    const filter = e.getAttribute('data-filter');
+
     projects.forEach(project => {
-      if ( project.classList.contains(filter)) {
+
+      if (project.classList.contains(filter)) {
+
         project.style.display = 'block';
 		project.classList.add('action')
+
       } else if(filter === 'all'){
+
 		project.classList.add('action')
         project.style.display = 'block';
+
       }else {
         project.style.display = 'none';
 		project.classList.remove('action')
       }
     });
+
+	button.forEach(e => e.classList.remove('action'));
+    e.classList.add('action');
     
   });
 });
@@ -373,7 +379,7 @@ function checkBox(){
 
 
 function RosaTransition(){
-	const box= document.querySelectorAll('.rosa.box')
+	const box= document.querySelectorAll('.rosa-wrapper')
 window.addEventListener('scroll', checkBox)
 
 checkBox()
@@ -400,7 +406,9 @@ const form = document.querySelector("form"),
 	emailInput = document.querySelector("#email"),
 	UserName = document.querySelector("#name"),
 	UserWebsite= document.querySelector("#website"),
-	UserMessage= document.querySelector("#message")
+	UserMessage= document.querySelector("#message"),
+	ModalText= document.querySelector(".modal-text")
+
 
 
 function checkEmail() {
@@ -440,10 +448,41 @@ function checkUser() {
 		return true;
 	}
 }
+function checkweb() {
+	const webValue = UserWebsite.value.trim()
+	if (webValue === "") {
+		UserWebsite.parentElement.querySelector(".message").innerHTML =
+			`<p class="error">Website is required</p>`
+
+		
+			UserWebsite.classList.add("weak");
+		return false;
+	}else{
+		UserWebsite.parentElement.querySelector(".message").innerHTML = "";
+		UserWebsite.classList.remove("weak");
+		return true;
+	}
+}
+function checkmassage() {
+	const massageValue = UserMessage.value.trim()
+	if (massageValue === "") {
+		UserMessage.parentElement.querySelector(".message").innerHTML =
+			`<p class="error">Massage is required</p>`
+
+		
+			UserMessage.classList.add("weak");
+		return false;
+	}else{
+		UserMessage.parentElement.querySelector(".message").innerHTML = "";
+		UserMessage.classList.remove("weak");
+		return true;
+	}
+}
 
 
 function addNewUser(userObj) {
-	fetch("https://borjomi.loremipsum.ge/api/send-message", {
+	try{
+		fetch("https://borjomi.loremipsum.ge/api/send-message", {
 		method: "post",
 		headers: {
 			"Content-Type": "application/json",
@@ -456,22 +495,27 @@ function addNewUser(userObj) {
 
 
 		});
+	}catch (error) {
+		ModalText.innerHTML = "Server error :( please try again later"
+	}
 }
 
 emailInput.addEventListener("input", checkEmail);
 UserName.addEventListener("input", checkUser);
-
+UserWebsite.addEventListener("input", checkweb);
+UserMessage.addEventListener("input", checkmassage);
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	const isEmailValid = checkEmail()
 	const userisVaild = checkUser()
+	const webVaild = checkweb()
+	const isMassagevaild = checkmassage()
 	if (
-		isEmailValid && userisVaild 
+		isEmailValid && userisVaild && webVaild && isMassagevaild
 	) {
 		showModal("#success-modal");
 		form.reset();
-		
 			e.preventDefault();		
 			const userObj = {
 				email: email.value,
@@ -480,6 +524,7 @@ form.addEventListener("submit", (e) => {
 				message:UserMessage.value
 			};
 			addNewUser(userObj)
+		
 	}
 });
 function showModal(selector) {
@@ -488,5 +533,27 @@ function showModal(selector) {
 		modal.classList.add("active");
 	}
 }
+
+function FromTransition(){
+	const box= document.querySelectorAll('.contact-wrapper')
+window.addEventListener('scroll', checkBox)
+
+checkBox()
+
+
+function checkBox(){
+	const triggerBottom = window.innerHeight ;
+
+	box.forEach((box) =>{
+		const boxTop = box.getBoundingClientRect().top;
+
+		if(boxTop < triggerBottom){
+			box.classList.add('action')
+		
+		}
+		
+	})
+}
+} FromTransition()
 
 

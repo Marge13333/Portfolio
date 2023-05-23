@@ -20,16 +20,17 @@
     text-align: start;
     animation-name: headerIntro2 ;
 	animation-duration: 2s;
-    font-family: 'Poppins', sans-serif;
-
+    font-family: "Poppins Exrta Bold";
 }
 .header-logo{
     font-size: 40px;
     color: #1A1A1A;
+    font-family: "Poppins Exrta Bold";
 }
 .header-logo-desc{
     font-size: 13px;
     color: #B3B3B3;
+    font-family: 'Montserrat';
 }
 .about-me{
    text-align: center;
@@ -40,13 +41,14 @@
 .header-01{
     color: #1C1C1C;
     font-size: 150px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins Exrta Bold";
+
 }
 .header-about-me{
     color: #373737;
     margin-top: -155px;
     font-size: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins Exrta Bold";
 
 }
 .intro{
@@ -105,7 +107,7 @@
 .my-info{
     margin-top: 200px;
     opacity: 1;
-    max-width: 610px;
+    max-width: 710px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -114,17 +116,23 @@
 	animation-duration: 2s;
 }
 .my-name1{
-    font-family:"GlacialIndifference-Regular" ;
+    font-family: "Glacialindifference regular";
     font-size: 50px;
     color: #212121;
 }
 .my-name2{
-    font-family:"GlacialIndifference-Bold" ;
+    font-family: "Glacialindifference bold";
     font-size: 70px;
+    max-width: 700px;
+    width: 100%;
     color: #212121;
 }
+.my-name{
+    display: flex;
+    gap: 22px;
+}
 .my-work{
-    font-family:"GlacialIndifference-Regular" ;
+    font-family: "Glacialindifference regular";
     letter-spacing: 0.75px;
     font-size: 25px;
     color: #212121;
@@ -159,16 +167,17 @@
 .satisfied-span{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .satisfied-100{
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrar bold";
  color: #E93656;
- font-size: 24px;
+ font-size: 19px;
 }
 .satisfied-100-2{
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrar bold";
     color: #212121;
-    font-size: 24px;
+    font-size: 19px;
 }
 .satisfied-line,.satisfied-line2{
     height: 5px;
@@ -192,13 +201,14 @@
     display: flex;
     gap: 60px;
     justify-content: center;
+    opacity: 0;
 }
 .info-wrapper.action{
     display: flex;
     gap: 60px;
     justify-content: center;
 
-
+    opacity: 1;
     animation-name: infoWrap ;
 	animation-duration: 3s;
 }
@@ -211,17 +221,17 @@
 
 
 .much-info-name{
-    font-family:"GlacialIndifference-Bold" ;
+    font-family: "Glacialindifference bold";
     font-size: 40px;
     color: #222;
 }
 .much-info-work{
-    font-family:"GlacialIndifference-Regular" ;
+    font-family: "Muli";
     font-size: 14px;
     color: #DAAE19;
 }
 .mini-info{
-    font-family:"GlacialIndifference-Regular" ;
+    font-family: "Muli regular";
     font-size: 15px;
     color: #555555;
     margin-top: 30px;
@@ -232,7 +242,7 @@
     background-color: #E93656;
     border: 1px solid #E93656;
     color: #ffffff;
-    font-family:"GlacialIndifference-Regular" ;
+    font-family: "Glacialindifference bold";
     transition: all.3s
 }
 .much-info-HireMe:hover{
@@ -276,12 +286,12 @@
 }
 
 .num,.lines-percent{
-    font-family: 'Poppins', sans-serif;
+    font-family: "Glacialindifference bold";
  color: #E93656;
  font-size: 20px;
 }
 .html-100-2,.css-100-2,.js-100-2{
-    font-family: 'Poppins', sans-serif;
+    font-family: "Glacialindifference bold";
     color: #212121;
     font-size: 20px;
 }
@@ -320,7 +330,6 @@
     background-color: #E93656;
     margin-top:10px;
     border-radius: 10%;
-
     
     width: 50%;
     animation-name: lineWidht4 ;
@@ -349,6 +358,7 @@
     gap: 40px;
     justify-content: center;
     padding: 60px 0;
+    opacity: 0;
 }
 .info-bottom-wrapper.action{
     display: flex;
@@ -357,7 +367,7 @@
     justify-content: center;
     padding: 60px 0;
 
-
+    opacity: 1;
     animation-name:  bottomInfo2 ;
     animation-duration: 4s;
 }
@@ -394,12 +404,12 @@
     gap: 15px;
 }
 .info-ttile{
-    font-family:"Muli" ;
+    font-family: "Glacialindifference bold";
     font-size: 25px;
     color: #ffffff;
 }
 .info-para{
-    font-family:"Muli" ;
+    font-family: "Muli";
     font-size: 14px;
     color: #DFDFDF;
 }
@@ -428,6 +438,7 @@
     background-color: #FAFAFA;
     border: 1px solid #aaaaaa;
     transition: all.5s;
+    opacity: 0;
 
 }
 
@@ -442,9 +453,7 @@
     background-color: #FAFAFA;
     border: 1px solid #aaaaaa;
     transition: all.5s;
-    animation-name:BgIntro10  ;
-    animation-duration: 4s;
-
+    opacity: 1;
     animation-name:BgIntro10  ;
     animation-duration: 4s;
 
@@ -459,7 +468,7 @@
     color: #ECECEC;
     cursor: default;
     transition: all.5s;
-    
+    font-family: "Muli light";
 }
 
 .box:hover{
@@ -480,6 +489,7 @@
     color: #ffffff;
 }
 .box-title{
+    font-family: "Glacialindifference bold";
     font-size: 22px;
     color: #222;
     cursor: default;
@@ -501,13 +511,14 @@
     display: flex;
     align-items: center;
     gap: 70px;
+    opacity: 0;
 }
 .recom-wrapper-inner.action{
     padding-top: 200px;
     display: flex;
     align-items: center;
     gap: 70px;
-
+    opacity: 1;
     animation-name:headerIntro1;
     animation-duration: 4s;
 }
@@ -517,13 +528,11 @@
     align-items: center;
 }
 
-
-
-
 .recom-change{
     display: flex;
     gap: 50px;
     align-items: center;
+    opacity: 0;
 
     display: none;
 }
@@ -534,7 +543,7 @@
     max-width: 1100px;
     width: 100%;
     align-items: center;
-
+    opacity: 1;
 
     animation-name:actionN1  ;
     animation-duration: 3s;
@@ -546,6 +555,7 @@
     max-width: 500px;
     width: 100%;
     text-align: end;
+    font-family: "Roboto light";
 }
 
 .recom-img{
@@ -562,11 +572,13 @@
 
 font-size: 13px;
 color: #E93656;
+font-family: "Roboto regular";
 }
 .recom-title{
     font-size: 28px;
     color: #ffffff;
     margin-top: 10px;
+    font-family: "Glacialindifference bold";
 }
 .btns{
     cursor: pointer;
@@ -577,6 +589,7 @@ color: #E93656;
 .recom-btns{
     border: 2px solid #E93656;
     padding: 8px;
+
 }
 .recom-btns.action{
     border: 2px solid #E93656;
@@ -586,6 +599,7 @@ color: #E93656;
 background-color: #E93656;
     animation-name:recomBtns  ;
     animation-duration: 0.3s;
+    opacity: 1;
 }
 /* Last Projects */
 .latest-projects{
@@ -603,7 +617,9 @@ background-color: #E93656;
     display: inline-block;
     font-size: 70px;
     margin-left: 250px;
+    font-family: "Glacialindifference bold";
     color: #2E2E2E;
+    opacity: 0;
 }
 .latest-projects-title.action{
     display: inline-block;
@@ -613,6 +629,7 @@ background-color: #E93656;
     animation-name:LastPro1  ;
     animation-duration: 3s;
     color: #2E2E2E;
+    opacity: 1;
 }
 
 
@@ -640,9 +657,13 @@ background-color: transparent;
 border: transparent;
 color: #ffffff;
 transition: all.3s;
+font-family: "Glacialindifference bold";
+opacity: 0;
+
 }
 .projects-btn.active{
     font-size: 20px;
+    font-family: "Glacialindifference bold";
     text-align: start;
 background-color: transparent;
 border: transparent;
@@ -652,10 +673,12 @@ transition: all.3s;
 
 animation-name:LastPro3 ;
     animation-duration: 3s;
+    opacity: 1;
 }
 
 .projects-btn{
     font-size: 20px;
+    font-family: "Glacialindifference bold";
     text-align: start;
 background-color: transparent;
 border: transparent;
@@ -767,6 +790,7 @@ opacity: 0.9;
     border-radius: 50%;
     background-color: transparent;
     transition: all.2s;
+
 }
 .heart-photo.action{
     padding: 18px 20px ;
@@ -780,10 +804,13 @@ opacity: 0.9;
 }
 .project-data{
     font-size: 11px;
+    font-family: "Muli";
     color: #ffffff;
 }
 .projects-title{
     font-size: 23px;
+    font-family: "Glacialindifference bold";
+
     color: #ffffff;
 }
 /*Latest Articles*/
@@ -801,6 +828,7 @@ opacity: 0.9;
     display: inline-block;
     margin: auto;
     font-size: 80px;
+    font-family: "Glacialindifference bold";
     color: #2f2f2f;
 }
 .articles-box1{
@@ -817,18 +845,22 @@ opacity: 0.9;
     width: 100%;
     margin-left: 150px;
     display: flex;
+    opacity: 0;
 }
 .articles-box2{
     max-width: 1750px;
     width: 100%;
     margin-right: 150px;
     display: flex;
+    opacity: 0;
 }
 .articles-box1.action{
     max-width: 1750px;
     width: 100%;
     margin-left: 150px;
     display: flex;
+    opacity: 1;
+    
 
 
     animation-name: articles1 ;
@@ -839,6 +871,7 @@ opacity: 0.9;
     width: 100%;
     margin-right: 150px;
     display: flex;
+    opacity: 1;
 
 
     animation-name: articles5 ;
@@ -848,8 +881,7 @@ opacity: 0.9;
     font-size: 16px;
     color: #888;
     margin-top: 30px;
-
-
+    font-family: "Muli";
 }
 .articles-icon{
     border-radius: 50%;
@@ -889,7 +921,8 @@ opacity: 0.9;
     transform: matrix(0, -1, 1, 0, 0, 0);
     display: inline-block;
     margin-top: 240px;
-    font-size: 27px;
+    font-size: 23px;
+    font-family: "jaapokki regular";
     color: #E93656;
 }
 .article-box-wallpaper{
@@ -898,16 +931,19 @@ opacity: 0.9;
     }
 
 .articles-mini-para{
+    font-family: "Muli";
     font-size: 14px;
     color: #888;
     margin-top: 30px;
 }
 .articles-box-title{
+    font-family: "Glacialindifference bold";
     font-size: 40px;
     margin-top: 5px;
     color: #161616;
 }
 .articles-para{
+    font-family: "Muli";
 font-size: 16px ;
 color: #888;
 max-width:570px ;
@@ -915,11 +951,9 @@ width: 100%;
 }
 /* rosa */
 .rosa{
-    
-    max-width: 1170px;
     width: 100%;
     display: flex;
-   
+    overflow: hidden;
     gap: 80px;
     justify-content: center;
     flex-direction: column;
@@ -929,16 +963,34 @@ width: 100%;
 .rosa-title{
     display: inline-block;
     margin: auto;
+    font-family: "Glacialindifference bold";
     font-size: 70px;
     color: #262526;
 }
 .rosa-wrapper{
+    
     display: grid;
     grid-template-columns: 230px 230px 230px 230px 230px ;
     max-width: 1170px;
     width: 100%;
     margin: auto;
+opacity: 0;
+
 }
+.rosa-wrapper.action{
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px 230px ;
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+   
+
+
+    animation-name: rosa2 ;
+    animation-duration: 3s;
+}
+
 .rosa-box{
     max-width: 230px;
     width: 100%;
@@ -982,8 +1034,10 @@ width: 100%;
 .rosa-para{
     font-size: 13px;
     color: #626262;
+    font-family: "Roboto light";
 }
 .rosa-name{
+    font-family: "Poppins semi Bold";
     font-size: 16px;
     color: #161616;
 }
@@ -998,21 +1052,37 @@ width: 100%;
     max-width: 890px;
     width: 100%;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 100px;
 display: flex;
 justify-content: center;
-
+opacity: 1;
 /* align-items:center ; */
 flex-direction: column;
 }
+.contact-wrapper.action{
+    max-width: 890px;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+display: flex;
+justify-content: center;
+opacity: 1;
+    animation-name: forms1 ;
+    animation-duration: 2s;
+/* align-items:center ; */
+flex-direction: column;
+}
+
 .contact-titles{
     text-align: center;
 }
 .contact-title{
+    font-family: "Roboto light";
     font-size: 45px;
-    color: #212121;
+    color: #E93656;
 }
 .contact-lorem{
+    font-family: "jaapokki regular";
     font-size: 17px;
     color: #212121;
     padding-top: 15px;
@@ -1033,6 +1103,7 @@ flex-direction: column;
 justify-content: space-between;
 }
 input{
+    font-family: "Poppins semi Bold";
     width: 100%;
     padding: 20px 30px;
     background-color: #2E2E2E;
@@ -1044,6 +1115,9 @@ input{
     height: 110px;
 }
 .form-row-message{
+    margin-top: 5px;
+}
+#massage{
     margin-top: 10px;
 }
 .message {
@@ -1070,6 +1144,8 @@ input{
 }
 .button{
     color: #ffffff;
+    font-family: "Glacialindifference bold";
+    font-size: 12px;
     padding: 16px 45px;
     background-color: #E93656;
     border: 1px solid #E93656;
@@ -1082,7 +1158,18 @@ input{
     padding: 16px 45px;
     background-color: transparent;
 }
+.error{
+    font-family: "Poppins semi Bold";
+    font-size: 14px;
+}
+#website{
+    margin-top: 31px;
+}
+.idk{
+    opacity: 0;
+   }
 .modal{
+    font-family: "Poppins semi Bold";
     display: none;
     max-width: 600px;
     margin: auto;
@@ -1093,9 +1180,7 @@ input{
     color: #E93656;
     padding: 20px 30px;
 }
-.idk{
- opacity: 0;
-}
+
 .modal.active{
     display: block;
     max-width: 600px;
@@ -1108,29 +1193,6 @@ input{
     padding: 20px 30px;
 }
 
-
-@media (width <= 768px){
-    .contact-wrapper {
-        padding-top: 20px;
-    }
-    .upper-form{
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .form-row-message {
-        display: flex;
-        justify-content: center;
-    }
-    .message-type{
-        max-width: 90%;
-    }
-}
-
-
-
 /* footer */
 footer{
     width: 100%;
@@ -1142,18 +1204,29 @@ footer{
     padding-top: 110px;
     background-color: #282828;
     text-align: center;
+    opacity: 1;
 }
+
+
 .footer-title{
+    font-family: "Poppins Exrta Bold";
     font-size: 55px;
     color: #ffffff;
+    opacity: 1;
 }
+
 .footer-para{
+    font-family: "Roboto regular";
     max-width: 610px;
     font-size: 17px;
     margin: auto;
     margin-top: 22px;
     color: #A5A5A5;
+    opacity: 1;
 }
+
+
+
 .socials-footer{
 display: flex;
 gap: 10px;
@@ -1167,6 +1240,7 @@ justify-content: center;
     justify-content: center;
 }
 .lowwer-footer-para{
+    font-family: "Muli";
     margin: auto;
     font-size: 15px;
     color: #A0A8B7;

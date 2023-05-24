@@ -482,7 +482,7 @@ function checkmassage() {
 
 function addNewUser(userObj) {
 	try{
-		fetch("https://borjomi.loremipsum.ge/api/send-message", {
+		fetch("http://borjomi.loremipsum.ge/api/send-message", {
 		method: "post",
 		headers: {
 			"Content-Type": "application/json",

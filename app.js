@@ -482,7 +482,7 @@ function checkmassage() {
 
 function addNewUser(userObj) {
 	try{
-		fetch("https://borjomi.loremipsum.ge/api/send-message", {
+		fetch("http://borjomi.loremipsum.ge/api/send-message", {
 		method: "post",
 		headers: {
 			"Content-Type": "application/json",
@@ -514,8 +514,7 @@ form.addEventListener("submit", (e) => {
 	if (
 		isEmailValid && userisVaild && webVaild && isMassagevaild
 	) {
-		showModal("#success-modal");
-		form.reset();
+		
 			e.preventDefault();		
 			const userObj = {
 				email: email.value,
@@ -524,6 +523,10 @@ form.addEventListener("submit", (e) => {
 				message:UserMessage.value
 			};
 			addNewUser(userObj)
+			
+			form.reset();
+			showModal("#success-modal");
+		
 		
 	}
 });

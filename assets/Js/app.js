@@ -497,6 +497,8 @@ function addNewUser(userObj) {
 		});
 	}catch (error) {
 		ModalText.innerHTML = "Server error :( please try again later"
+		form.reset();
+		showModal("#success-modal");
 	}
 }
 

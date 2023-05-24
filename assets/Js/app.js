@@ -514,6 +514,25 @@ form.addEventListener("submit", (e) => {
 	if (
 		isEmailValid && userisVaild && webVaild && isMassagevaild
 	) {
+		function addNewUser(userObj) {
+			try{
+				fetch("http://borjomi.loremipsum.ge/api/send-message", {
+				method: "post",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(userObj),
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					console.log(data);
+		
+		
+				});
+			}catch (error) {
+				ModalText.innerText = "Server error :( please try again later"
+			}
+		}
 		
 			e.preventDefault();		
 			const userObj = {

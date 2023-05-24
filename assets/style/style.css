@@ -996,7 +996,7 @@ opacity: 0;
     width: 100%;
     transition: all.3s;
 }
-.rosa-box.action{
+.rosa-box{
     max-width: 230px;
     width: 100%;
     height: 110px;
@@ -1162,12 +1162,7 @@ input{
     font-family: "Poppins semi Bold";
     font-size: 14px;
 }
-#website{
-    margin-top: 31px;
-}
-.idk{
-    opacity: 0;
-   }
+
 .modal{
     font-family: "Poppins semi Bold";
     display: none;
@@ -1181,6 +1176,9 @@ input{
     padding: 20px 30px;
 }
 
+.idk{
+    opacity: 0;
+   }
 .modal.active{
     display: block;
     max-width: 600px;

@@ -210,7 +210,7 @@
             margin-top: 170px;
      }
      /* rosa */
-     .rosa-wrapper{
+     .rosa-wrapper.action{
         display: grid;
         grid-template-columns: 230px 230px 230px  ;
         justify-content: center;
@@ -832,7 +832,7 @@ background-color: #E93656;
         height: 500px;
         }
         /* rosa */
-        .rosa-wrapper{
+        .rosa-wrapper.action{
             overflow: hidden;
             display: grid;
             grid-template-columns: 230px 230px  ;
@@ -856,7 +856,7 @@ background-color: #E93656;
         }
         .upper-form{
             display: flex;
-            gap: 10px;
+            gap: 3px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -886,6 +886,10 @@ background-color: #E93656;
         }
         .contact-wrapper.action {
             padding-top: 20px;
+        }
+        .form-row-message{
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
 }
@@ -980,7 +984,7 @@ background-color: #E93656;
         .rosa{
             overflow: hidden;
         }
-        .rosa-wrapper{
+        .rosa-wrapper.action{
             display: grid;
             grid-template-columns: 130px 130px  ;
             justify-content: center;

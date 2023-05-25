@@ -64,12 +64,12 @@ HtmlCssLine()
 function ReactJsLine(){
 	const linesSecond = document.querySelectorAll('.lines-50')
 
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkline)
 
-checkBox()
+checkline()
 
 
-function checkBox(){
+function checkline(){
 	const triggerBottom = window.innerHeight ;
 
 	linesSecond.forEach((box) =>{
@@ -93,12 +93,12 @@ ReactJsLine()
 function SecondSectionTransition(){
 	const MuchInfo = document.querySelectorAll('.info-wrapper')
 
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkinfo)
 
-checkBox()
+checkinfo()
 
 
-function checkBox(){
+function checkinfo(){
 	const triggerBottom = window.innerHeight ;
 
 	MuchInfo.forEach((box) =>{
@@ -117,12 +117,12 @@ function checkBox(){
 function InfoSectionAnimation(){
 	const InfoBottom = document.querySelectorAll('.info-bottom-wrapper')
 
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkbottom)
 
-checkBox()
+checkbottom()
 
 
-function checkBox(){
+function checkbottom(){
 	const triggerBottom = window.innerHeight ;
 
 	InfoBottom.forEach((box) =>{
@@ -144,12 +144,12 @@ function checkBox(){
 
 function bestServiceAnimation(){
 	const box= document.querySelectorAll('.box')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkBoxBox)
 
-checkBox()
+checkBoxBox()
 
 
-function checkBox(){
+function checkBoxBox(){
 	const triggerBottom = window.innerHeight ;
 
 	box.forEach((box) =>{
@@ -206,12 +206,12 @@ recomslider()
 
 function RecomTransition(){
 	const box= document.querySelectorAll('.recom-wrapper-inner')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkrecom)
 
-checkBox()
+checkrecom()
 
 
-function checkBox(){
+function checkrecom(){
 	const triggerBottom = window.innerHeight ;
 
 	box.forEach((box) =>{
@@ -263,12 +263,12 @@ button.forEach(e => {
 
 function LastProjectsAnimationTitle(){
 	const Title= document.querySelectorAll('.latest-projects-title')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checklast)
 
-checkBox()
+checklast()
 
 
-function checkBox(){
+function checklast(){
 	const triggerBottom = window.innerHeight ;
 
 	Title.forEach((box) =>{
@@ -288,12 +288,12 @@ LastProjectsAnimationTitle()
 
 function LastProjectsAnimationSection(){
 	const Sect= document.querySelectorAll('.projects-filter-div')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkproj)
 
-checkBox()
+checkproj()
 
 
-function checkBox(){
+function checkproj(){
 	const triggerBottom = window.innerHeight ;
 
 	Sect.forEach((box) =>{
@@ -311,12 +311,12 @@ function checkBox(){
 
 function LastProjectsAnimationList(){
 	const List= document.querySelectorAll('.projects-btn')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkbtn)
 
-checkBox()
+checkbtn()
 
 
-function checkBox(){
+function checkbtn(){
 	const triggerBottom = window.innerHeight ;
 
 	List.forEach((box) =>{
@@ -334,12 +334,12 @@ function checkBox(){
 
 function ArtcilesTransBoxsFirst(){
 	const box= document.querySelectorAll('.articles-box1')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkbox1)
 
-checkBox()
+checkbox1()
 
 
-function checkBox(){
+function checkbox1(){
 	const triggerBottom = window.innerHeight ;
 
 	box.forEach((box) =>{
@@ -356,12 +356,12 @@ function checkBox(){
 
 function ArtcilesTransBoxsSecond(){
 	const box= document.querySelectorAll('.articles-box2')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkbox2)
 
-checkBox()
+checkbox2()
 
 
-function checkBox(){
+function checkbox2(){
 	const triggerBottom = window.innerHeight ;
 
 	box.forEach((box) =>{
@@ -380,12 +380,12 @@ function checkBox(){
 
 function RosaTransition(){
 	const box= document.querySelectorAll('.rosa-wrapper')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkrosa)
 
-checkBox()
+checkrosa()
 
 
-function checkBox(){
+function checkrosa(){
 	const triggerBottom = window.innerHeight ;
 
 	box.forEach((box) =>{
@@ -560,12 +560,12 @@ function showModal(selector) {
 
 function FromTransition(){
 	const box= document.querySelectorAll('.contact-wrapper')
-window.addEventListener('scroll', checkBox)
+window.addEventListener('scroll', checkcontact)
 
-checkBox()
+checkcontact()
 
 
-function checkBox(){
+function checkcontact(){
 	const triggerBottom = window.innerHeight ;
 
 	box.forEach((box) =>{

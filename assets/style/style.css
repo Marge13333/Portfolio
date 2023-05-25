@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*-----------header---------------*/
 .header{
     width: 100%;
@@ -725,37 +726,37 @@ cursor: pointer;
 }
 #work-ideas{
     height: 350px;
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/img1.avif);
    background-size: cover;
    background-position: center;
 }
 #mockup{
     height: 350px;
-    background-image: url(../images/img2.jpg);
+    background-image: url(../images/img2.avif);
    background-size: cover;
    background-position: center;
 }
 #psd{
     height: 350px;
-    background-image: url(../images/img3.jpg);
+    background-image: url(../images/img3.avif);
    background-size: cover;
    background-position: center;
 }
 #logo-pro{
     height: 350px;
-    background-image: url(../images/img4.jpg);
+    background-image: url(../images/img4.avif);
    background-size: cover;
    background-position: center;
 }
 #Presentatione{
     height: 350px;
-    background-image: url(../images/img5.jpg);
+    background-image: url(../images/img5.avif);
    background-size: cover;
    background-position: center;
 }
 #Icon{
     height: 350px;
-    background-image: url(../images/img6.jpg);
+    background-image: url(../images/img6.avif);
    background-size: cover;
    background-position: center;
 }

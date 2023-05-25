@@ -9,11 +9,11 @@
     .satisfied-2{
         display: block;
         margin-top: 70px;
+        gap: 5px;
     }
     .satisfied-line2{
         display: block;
         max-width: 290px;
-        margin-top: -5px;
     }
     .satisfied{
         display: none;
@@ -475,7 +475,7 @@ animation-duration: 3s;
        display: flex;
        margin: 0 auto;
        margin-top: 0px;
-       gap: 20px;
+       gap: 0px;
        flex-wrap: wrap;
    }
    
@@ -617,6 +617,7 @@ animation-duration: 3s;
 }
 /* best service */
 .best-service{
+    overflow: hidden;
     margin-top: 150px;
     margin-bottom: 100px;
 }
